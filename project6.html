@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Data Science</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Featured</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li><a href="main_projects.html">Projects</a></li>
+							<li class="active"><a href="project1.html">#1 Text mining</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/jeffJongyoon/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/joenewnee/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>#1 Text Mining</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<header>
+										<h2>Song by genres</h2>
+										<p><a href="https://github.com/JeffJongyoon/Song-by-genres">Scource code in GitHub</a></p>
+									</header>
+								<!-- Example Code -->
+								<h4>Library requirements</h4>
+								<pre><code>library(data.table)
+library(knitr)
+library(ggplot2)
+library(dplyr)
+library(wordcloud2)
+library(tidyverse)
+library(tidytext)
+library(tm)
+library(RColorBrewer)
+library(DT)
+library(gplots)
+library(ggridges)
+library(gridExtra)</code></pre>
+												
+									<p>People have been living in a world full of various sentiments such as excitements, sadness, happiness, etc. Songs have been used as representatives of emotions towards love, politics and even more.
+										In this project, it will deliver some interesting findings about songs.</p>
+										
+									<span class="image fit"><img src="images/hist.png" alt="" /></span>
+									
+									<p>First, let’s take a look at the number of characters of stemmed words by genre. As you can see, the number of characters used in Rock is the biggest, even 2 times more than that of Hip-Hop, the next frequent genre.
+											I looked at the dt_lyrics dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts.
+											For the purpose of simplicity, two genres, Rock and Indie, are chosen to see if there are some differences.</p>
+									
+									<span class="image left"><img src="images/r.png" alt="" /></span>
+									<span class="image right"><img src="images/ir.png" alt="" /></span>
+									<br><br><br><br><br><br><br><br><br><br><br>
+									<p>First, let’s take a look at the number of characters of stemmed words by genre. As you can see, the number of characters used in Rock is the biggest, even 2 times more than that of Hip-Hop, the next frequent genre.
+											I looked at the dt_lyrics dataset more closely and found out that there are significant imbalances in observations, i.e. high number of observations in 2006 and 2007 compared to the rest years, so that it concludes that it makes sense to compare them in proportions rather than the counts.
+											For the purpose of simplicity, two genres, Rock and Indie, are chosen to see if there are some differences.</p>
+									
+									<p>These are wordclouds that show which words are frequently used, presented in different sizes. Two plots show that two genres have top frequently used words in common. For example, they all talk about youre, time, life a lot.
+										Major differences in frequencies are hard to distinguish and common words are frequently used regardless of genres.</p>
+									
+									<p>We sing because we want to express our feelings through songs so the sentiment analysis is the most important part in this project. Let’s look at some of characteristics of stemmed words by the sentiment analysis referenced by the NRC lexicon. In each year, the frequencies of eight basic emotions were collected in percent and calculated to show the emotion distributions.</p>
+
+
+									<span class="image fit"><img src="images/emo_dist.png" alt="" /></span>
+								
+									<p>All eight emotions are expressed at word counts rates. At the first plot, joy, sadness, trust have the highest frequencies in use than others. In addition, the right plot shows the density distribution of emotions, which tells us that emotions such as surprise, disgust, fear are approximately normally distributed but those such as joy, sadness, anger are highly skewed.</p>
+									
+									<span class="image fit"><img src="images/emo_dist2.png" alt="" /></span>
+
+
+									<p>This graph shows how different the emotions would be distributed depending on different genres. So ridgeline plots are made to represent the distribution of emotions used in Hip-Hop, Indie, and Rock. Obviously, the emotions used in each of three genres are distributed very differently.</p>
+									
+									<br /><br />
+									<a href="project.html" class="button">Back</a>
+									<hr />
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address<br />(Work)</h3>
+								<p>Columbia University<br />
+									New York, NY 10027</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto: jysohn0104@gmail.com">jysohn0104@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/jeffJongyoon/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/joenewnee/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; joenewnee</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
